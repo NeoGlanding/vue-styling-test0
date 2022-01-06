@@ -6,8 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+
+<style>
+    .box {
+        border: 10px dashed red;
+        width: 30rem;
+        height: 10rem
+    }
+</style>
+
+<body id="root">
     
+    <div @click="clickBox('a')" :style="{borderColor: box['a'] ? 'blue' : 'red'}" class="box"></div>
+    <div @click="clickBox('b')" :style="{borderColor: box['b'] ? 'blue' : 'red'}" class="box" ></div>
+    <div @click="clickBox('c')" :style="{borderColor: box['c'] ? 'blue' : 'red'}" class="box"></div>
 
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>
