@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <style>
@@ -17,9 +18,17 @@
 
 <body id="root">
     
+    <!-- Inline Dynamic -->
     <div @click="clickBox('a')" :style="{borderColor: box['a'] ? 'blue' : 'red'}" class="box"></div>
     <div @click="clickBox('b')" :style="{borderColor: box['b'] ? 'blue' : 'red'}" class="box" ></div>
     <div @click="clickBox('c')" :style="{borderColor: box['c'] ? 'blue' : 'red'}" class="box"></div>
+
+    <!-- Dynamic Class -->
+    <div @click="clickBox2('d')" class="demo">d</div>
+    <div @click="clickBox2('e')" class="demo">d</div>
+    <div @click="clickBox2('f')" class="demo">d</div>
+
+    {{ logBox() }}
 
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>

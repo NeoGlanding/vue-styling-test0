@@ -1,17 +1,19 @@
 const app = Vue.createApp({
     data() {
         return {
-            box: {}
-        }
-    },
-    watch :{
-        box(value) {
-            console.log(value)
+            box: {},
+            box2: {}
         }
     },
     methods: {
         clickBox(name) {
-            this.box[name] = true
+            this.box[name] = !this.box[name]
+        },
+        clickBox2(name) {
+            this.box2[name] = !this.box2[name]
+        },
+        logBox() {
+            console.log(this.box)
         }
     }
 })
