@@ -5,6 +5,11 @@ const app = Vue.createApp({
             box2: {}
         }
     },
+    computed: {
+        boxg() {
+            return {active: this.box.g}
+        }
+    },
     methods: {
         clickBox(name) {
             this.box[name] = !this.box[name]

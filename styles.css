@@ -5,6 +5,13 @@
     background-color: white;
 }
 
+.demo2 {
+    height: 10rem;
+    width: 20rem;
+    border: 10px solid red;
+    background-color: green;
+}
+
 .active {
     background-color: darkblue;
 }
