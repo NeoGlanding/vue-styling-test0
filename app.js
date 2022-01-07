@@ -8,6 +8,9 @@ const app = Vue.createApp({
     computed: {
         boxg() {
             return {active: this.box.g}
+        },
+        boxh() {
+            return {active: this.box.h}
         }
     },
     methods: {

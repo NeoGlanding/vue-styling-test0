@@ -12,6 +12,13 @@
     background-color: green;
 }
 
+.demo3 {
+    height: 10rem;
+    width: 20rem;
+    border: 10px solid red;
+    background-color: aqua;
+}
+
 .active {
     background-color: darkblue;
 }
